@@ -6,14 +6,14 @@ public class DebugFour3
       int width = 12,
       length = 10,
       height = 8;
-      FixDebugBox box1 = new DebugBox();
-      FixDebugBox box2 = new DebugBox(width, length, height);
+      DebugBox box1 = new DebugBox();
+      DebugBox box2 = new DebugBox(width, length, height);
       System.out.println("The dimensions of the first box are");
-      box1.showData();
+      box1.showData(width, length, height);
       System.out.print("  The volume of the first box is ");
       showVolume(box1);
       System.out.println("The dimensions of the second box are");
-      box2.showData();
+      box2.showData(width, length, height);
       System.out.print("  The volume of the second box is ");
       showVolume(box2);
    }
