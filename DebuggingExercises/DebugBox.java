@@ -3,26 +3,26 @@ public class DebugBox
    private int width;
    private int length;
    private int height;
-   private FixDebugBox()
+   public void FixDebugBox()
    {
       length = 1;
       width = 1;
       height = 1;
    }
-   public DebugBox(int width, int length, int height)
+   public void FixDebugBox(int width, int length, int height)
    {
-      width = width;
-      length = length;
-      height = height;
+      this.width = width;
+      this.length = length;
+      this.height = height;
    }
-   public void showData()
+   public void showData(int width, int length, int height)
    {
      System.out.println("Width: "  + width + "  Length: " +
        length + "  Height: " + height);
    }
-   public double getVolume()
+   public double getVolume(double length, double width, double height)
    { 
-     double vol = length - width - height;
+     double vol = length * width * height;
      return vol;
    }
 }
